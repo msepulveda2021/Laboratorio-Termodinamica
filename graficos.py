@@ -42,10 +42,12 @@ y_32err = np.array([0.4,0.35,0.35,0.4,0.3,0.25])
 #------------------------------------------------------------------------------------------------------------------------------------
 
 fig, ax = plt.subplots(figsize = (10,15))
-ax.errorbar(x_11, y_11, x_11err, y_11err)
+
+ax.errorbar(x_11, y_11, x_11err, y_11err, fmt='0', linewidth=2, capsize=6)
 ax.errorbar(x_21, y_21, x_21err, y_21err)
 ax.errorbar(x_31, y_31, x_31err, y_31err)
 ax.errorbar(x_12, y_12, x_12err, y_12err)
 ax.errorbar(x_22, y_22, x_22err, y_22err)
 ax.errorbar(x_32, y_32, x_32err, y_32err)
+
 plt.show()
