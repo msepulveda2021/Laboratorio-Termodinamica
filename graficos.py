@@ -41,13 +41,22 @@ y_32err = np.array([0.4,0.35,0.35,0.4,0.3,0.25])
 
 #------------------------------------------------------------------------------------------------------------------------------------
 
-fig, ax = plt.subplots(figsize = (10,15))
+fig, ax = plt.subplots(figsize = (5,7))
 
-ax.errorbar(x_11, y_11, x_11err, y_11err, fmt='0', linewidth=2, capsize=6)
-ax.errorbar(x_21, y_21, x_21err, y_21err, fmt='0', linewidth=2, capsize=6)
-ax.errorbar(x_31, y_31, x_31err, y_31err, fmt='0', linewidth=2, capsize=6)
-ax.errorbar(x_12, y_12, x_12err, y_12err, fmt='0', linewidth=2, capsize=6)
-ax.errorbar(x_22, y_22, x_22err, y_22err, fmt='0', linewidth=2, capsize=6)
-ax.errorbar(x_32, y_32, x_32err, y_32err, fmt='0', linewidth=2, capsize=6)
+#--------------------------------------------------------------------------------------------------------------------
+
+L1 = ax.errorbar(x_11, y_11, x_11err, y_11err, linestyle='dotted', marker='P', markersize=15, color='lime')
+L2 = ax.errorbar(x_21, y_21, x_21err, y_21err, linestyle='dotted', marker='P', markersize=15, color='limegreen')
+L3 = ax.errorbar(x_31, y_31, x_31err, y_31err, linestyle='dotted', marker='P', markersize=15, color='green')
+L4 = ax.errorbar(x_12, y_12, x_12err, y_12err, linestyle='-', marker='o', markersize=10, color='lightcoral')
+L5 = ax.errorbar(x_22, y_22, x_22err, y_22err, linestyle='-', marker='o', markersize=10, color='red')
+L6 = ax.errorbar(x_32, y_32, x_32err, y_32err, linestyle='-', marker='o', markersize=10, color='firebrick')
+
+#----------------------------------------------------------------------------------------------------------------------------
+
+ax.legend((L1, L2, L3, L4, L5, L6), ('300K, N50','300K, N100','300K, N150','600K, N50', '600K, N100', '600K, N150'), loc='upper right', shadow = True)
+ax.set_xlabel('Volumen (nm)')
+ax.set_ylabel('Presion (atm)')
+ax.set_title('Particulas Pesadas')
 
 plt.show()
