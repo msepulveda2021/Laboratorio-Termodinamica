@@ -1,6 +1,15 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
+matplotlib.use("pgf")
+matplotlib.rcParams.update({
+
+    "pgf.texsystem": "pdflatex",
+    'font.family': 'serif',
+    'text.usetex': True,
+    'pgf.rcfonts': False,
+})
+
 #------------------------------------------------------------------------------------------------------------------------
 
 # Datos 300k, n50, pligeras
@@ -60,3 +69,4 @@ ax.set_ylabel('Presion (atm)')
 ax.set_title('Particulas Pesadas')
 
 plt.show()
+plt.savefig('grafico_pp.pgf')
