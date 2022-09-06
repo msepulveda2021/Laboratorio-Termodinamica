@@ -1,11 +1,45 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-# example data
-x = np.array([0.5, 1.0, 1.5, 2.0, 2.5, 3.0, 3.5, 4.0, 4.5, 5.0])
-y = np.exp(-x)
-xerr = 0.1
-yerr = 0.2
+#------------------------------------------------------------------------------------------------------------------------
+
+# Datos 300k, n50
+x_11 = np.array([15,13,11,9,7,5])
+y_11 = np.array([4.1,4.5,5.3,6.45,8.35,11.6])
+x_11err = 0.5
+y_11err = np.array([0.2,0.4,0.5,0.45,0.45,0.4])
+
+# Datos 300k, n100
+x_21 = np.array
+y_21 = np.array
+x_21err = np.array
+y_21err = 0.5
+
+# Datos 300k, n150
+x_31 = np.array
+y_31 = np.array
+x_31err = np.array
+y_31err = 0.5
+
+# Datos 600k, n50
+x_12 = np.array
+y_12 = np.array
+x_12err = np.array
+y_12err = np.array
+
+# Datos 600k, n100
+x_22 = np.array
+y_22 = np.array
+x_22err = np.array
+y_22err = 
+
+# Datos 600k, n150
+x_32 = np.array
+y_32 = np.array
+x_32err = np.array
+y_32err = np.array
+
+#------------------------------------------------------------------------------------------------------------------------------------
 
 # lower & upper limits of the error
 lolims = np.array([0, 0, 1, 0, 1, 0, 0, 0, 1, 0], dtype=bool)
