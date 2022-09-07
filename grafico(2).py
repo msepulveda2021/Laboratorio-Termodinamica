@@ -18,18 +18,20 @@ y_250 = np.array([10,5,7.5,12.5,15])
 #----------------GRAFICOS----------------------------------------------------------------------
 
 fig, (ax1, ax2, ax3) = plt.subplots(1, 3)
-fig.suptitle()
 
 ax1.plot(x_50, y_50)
-ax1.set_xlabel()
-ax1.set_ylabel()
+ax1.set_xlabel('Temperatura (K)')
+ax1.set_ylabel('Volumen (nm)')
+ax1.set_title('Simulación 2')
 
 ax2.plot(x_150, y_150)
-ax2.set_xlabel()
-ax2.set_ylabel()
+ax2.set_xlabel('Temperatura (K)')
+ax2.set_ylabel('Volumen (nm)')
+ax2.set_title('Simulación 3')
 
 ax3.plot(x_250, y_250)
-ax3.set_xlabel()
-ax3.set_ylabel()
+ax3.set_xlabel('Temperatura (K)')
+ax3.set_ylabel('Volumen (nm)')
+ax3.set_title('Simulación 4')
 
 plt.show()
