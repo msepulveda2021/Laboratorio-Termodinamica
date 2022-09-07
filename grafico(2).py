@@ -1,5 +1,5 @@
 import numpy as np
-import matpltlib.pyplot as plt
+import matplotlib.pyplot as plt
 
 #----------------DATOS-------------------------------------------------------------------------
 
