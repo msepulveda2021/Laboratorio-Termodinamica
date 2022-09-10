@@ -56,13 +56,12 @@ L6 = ax.errorbar(x_32, y_32, x_32err, y_32err, linestyle='-', marker='o', marker
 
 #----------------------------------------------------------------------------------------------------------------------------
 
-ax.legend((L1, L2, L3, L4, L5, L6), ('T=300K, n=50','T=300K, n=100','T=300K, n=150','T=600K, n=50', 'T=600K, n=100', 'T=600K, n=150'), loc='upper right', shadow = True)
-ax.set_xlabel('Volumen (nm)')
-ax.set_ylabel('Presión (atm)')
+ax.legend((L1, L2, L3, L4, L5, L6), ('T=300K, n=50','T=300K, n=100','T=300K, n=150','T=600K, n=50', 'T=600K, n=100', 'T=600K, n=150'), loc='upper right', shadow = True) 
+
+ax.set_xlabel('Volumen (nm)') 
+ax.set_ylabel('Presión (atm)') 
 ax.set_title('Partículas Pesadas')
 
-
-archivo = 'grafico-PP.pdf'
-plt.savefig(archivo)
+plt.savefig('grafico-PP.pdf')
 
 plt.show()
