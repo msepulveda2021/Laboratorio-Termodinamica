@@ -63,7 +63,7 @@ ax.set_ylabel('Presion (atm)')
 ax.set_title('Particulas Pesadas')
 
 
-archivo = 'grafico-'+str(PP)+'.pdf'
+archivo = 'grafico-PP.pdf'
 plt.savefig(archivo)
 
 plt.show()
