@@ -1,15 +1,6 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-matplotlib.use("pgf")
-matplotlib.rcParams.update({
-
-    "pgf.texsystem": "pdflatex",
-    'font.family': 'serif',
-    'text.usetex': True,
-    'pgf.rcfonts': False,
-})
-
 #----------------DATOS-------------------------------------------------------------------------
 
 # gas ideal a presion constante de 5.8 atm
@@ -44,4 +35,4 @@ ax3.set_ylabel('Volumen (nm)')
 ax3.set_title('Simulación 4')
 
 plt.show()
-plt.savefig('grafico(2,3,4).pgf')
+plt.savefig('grafico(2,3,4).pdf')
