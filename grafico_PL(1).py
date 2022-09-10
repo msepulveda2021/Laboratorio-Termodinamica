@@ -60,4 +60,7 @@ ax.set_xlabel('Volumen (nm)')
 ax.set_ylabel('Presion (atm)')
 ax.set_title('Particulas Ligeras')
 
+archivo_1 = 'grafico-PL'+'.pdf'
+plt.savefig(archivo_1)
+
 plt.show()
