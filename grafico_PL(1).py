@@ -41,26 +41,28 @@ y_32err = np.array([0.4,0.35,0.35,0.4,0.3,0.25])
 
 #------------------------------------------------------------------------------------------------------------------------------------
 
+
+plt.figure()
 fig, ax = plt.subplots(figsize = (5,7))
 
 #--------------------------------------------------------------------------------------------------------------------
 
-L1 = ax.errorbar(x_11, y_11, x_11err, y_11err, linestyle='dotted', marker='P', markersize=15, color='orange')
-L2 = ax.errorbar(x_21, y_21, x_21err, y_21err, linestyle='dotted', marker='P', markersize=15, color='darkorange')
-L3 = ax.errorbar(x_31, y_31, x_31err, y_31err, linestyle='dotted', marker='P', markersize=15, color='darkgoldenrod')
-L4 = ax.errorbar(x_12, y_12, x_12err, y_12err, linestyle='-', marker='o', markersize=10, color='lightsteelblue')
-L5 = ax.errorbar(x_22, y_22, x_22err, y_22err, linestyle='-', marker='o', markersize=10, color='cornflowerblue')
-L6 = ax.errorbar(x_32, y_32, x_32err, y_32err, linestyle='-', marker='o', markersize=10, color='royalblue')
+L1 = ax.errorbar(x_11, y_11, x_11err, y_11err, linestyle='dotted', marker='P', markersize=10, color='orange')
+L2 = ax.errorbar(x_21, y_21, x_21err, y_21err, linestyle='dotted', marker='P', markersize=10, color='darkorange')
+L3 = ax.errorbar(x_31, y_31, x_31err, y_31err, linestyle='dotted', marker='P', markersize=10, color='darkgoldenrod')
+L4 = ax.errorbar(x_12, y_12, x_12err, y_12err, linestyle='-', marker='o', markersize=7, color='lightsteelblue')
+L5 = ax.errorbar(x_22, y_22, x_22err, y_22err, linestyle='-', marker='o', markersize=7, color='cornflowerblue')
+L6 = ax.errorbar(x_32, y_32, x_32err, y_32err, linestyle='-', marker='o', markersize=7, color='royalblue')
 
 #----------------------------------------------------------------------------------------------------------------------------
 
 ax.legend((L1, L2, L3, L4, L5, L6), 
-          ('300K, N50','300K, N100','300K, N150','600K, N50', '600K, N100', '600K, N150'), loc='upper right', shadow = True)
+          ('T=300K, n=50','T=300K, n=100','T=300K, n=150','T=600K, n=50', 'T=600K, n=100', 'T=600K, n=150'), loc='upper right', shadow = True)
 ax.set_xlabel('Volumen (nm)')
-ax.set_ylabel('Presion (atm)')
-ax.set_title('Particulas Ligeras')
+ax.set_ylabel('Presión (atm)')
+ax.set_title('Partículas Ligeras')
 
-archivo_1 = 'grafico-PL'+'.pdf'
+archivo_1 = 'grafico-PL.pdf'
 plt.savefig(archivo_1)
 
 plt.show()
