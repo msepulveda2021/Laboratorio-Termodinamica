@@ -54,10 +54,14 @@ L6 = ax.errorbar(x_32, y_32, x_32err, y_32err, linestyle='-', marker='o', marker
 
 #----------------------------------------------------------------------------------------------------------------------------
 
+
+plt.figure()
+
 ax.legend((L1, L2, L3, L4, L5, L6), ('300K, N50','300K, N100','300K, N150','600K, N50', '600K, N100', '600K, N150'), loc='upper right', shadow = True)
 ax.set_xlabel('Volumen (nm)')
 ax.set_ylabel('Presion (atm)')
 ax.set_title('Particulas Pesadas')
+
 
 archivo = 'grafico-'+str(PP)+'.pdf'
 plt.savefig(archivo)
