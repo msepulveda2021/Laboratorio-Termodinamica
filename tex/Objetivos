@@ -1,0 +1,10 @@
+\documentclass[../portafolio.tex]{subfiles}
+\begin{document}
+\section{Objetivos}
+ En este informe, y a través de la experimentación y el análisis de resultados bajo un marco teórico bien definido, intentaremos dar respuesta a las siguientes preguntas:
+ \begin{itemize}
+     \item ¿Qué predice que le sucederá a la presión dentro de un recipiente cuando la temperatura permanece constante pero el volumen cambia?
+     \item ¿Qué generalizaciones puede hacer acerca de cómo los cambios de temperatura afectan a la presión cuando el volumen en un recipiente permanece constante?
+     \item ¿Qué representa al área bajo la curva de un diagrama(P-V)?¿Cómo se calcula?
+ \end{itemize}
+\end{document}
