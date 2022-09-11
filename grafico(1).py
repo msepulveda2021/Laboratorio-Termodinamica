@@ -81,6 +81,9 @@ y_322err = np.array([0.4,0.35,0.35,0.4,0.3,0.25])
 
 #--------------------------------------------------------------------------------------------------------------------
 
+plt.figure()
+fig, (ax1, ax2) = plt.subplots(nrows=1, ncols=2, figsize = (11,7), constrained_layout=True)
+
 L11 = ax1.errorbar(x_111, y_111, x_111err, y_111err, linestyle='dotted', marker='P', markersize=10, color='orange')
 L21 = ax1.errorbar(x_211, y_211, x_211err, y_211err, linestyle='dotted', marker='P', markersize=10, color='darkorange')
 L31 = ax1.errorbar(x_311, y_311, x_311err, y_311err, linestyle='dotted', marker='P', markersize=10, color='darkgoldenrod')
@@ -96,9 +99,6 @@ L52 = ax2.errorbar(x_222, y_222, x_222err, y_222err, linestyle='-', marker='o', 
 L62 = ax2.errorbar(x_322, y_322, x_322err, y_322err, linestyle='-', marker='o', markersize=7, color='firebrick')
 
 #----------------------------------------------------------------------------------------------------------------------------
-
-plt.figure()
-fig, (ax1, ax2) = plt.subplots(nrows=1, ncols=2, figsize = (11,7), constrained_layout=True)
 
 plt.legend((L11, L21, L31, L41, L51, L61, L12, L22, L32, L42, L52, L62), 
           ('T=300K, n=50','T=300K, n=100','T=300K, n=150','T=600K, n=50', 'T=600K, n=100', 'T=600K, n=150', 'T=300K, n=50','T=300K, n=100','T=300K, n=150','T=600K, n=50', 'T=600K, n=100', 'T=600K, n=150')
