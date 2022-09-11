@@ -1,0 +1,67 @@
+\documentclass[twoside]{report}
+\usepackage[table]{xcolor}
+\usepackage[paper=letterpaper,left=3cm,right=3cm,top=3cm,bottom=2cm,includefoot]{geometry}
+\usepackage{fancyhdr}
+\usepackage{tabularx}
+\usepackage{multirow}
+\usepackage[colorlinks]{hyperref}
+\usepackage{hhline}
+\usepackage{amsmath}
+\usepackage{enumitem}
+\setenumerate{itemsep=-3pt,topsep=3pt}
+\setdescription{itemsep=-3pt,topsep=3pt,leftmargin=!,labelwidth=4.5cm}
+\usepackage{pgfgantt}
+\usepackage{graphicx}   \graphicspath{{./img/} {./tex/img/}}
+\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[square,numbers,sort&compress]{natbib}
+\bibliographystyle{apsrev4-1}
+\usepackage{subfiles}
+
+%\usepackage{slashbox}
+\usepackage{diagbox}
+
+\pagestyle{fancy}
+\renewcommand{\footrulewidth}{0.4pt}
+\renewcommand{\headrulewidth}{0.4pt}
+\fancyfoot{}
+%\fancyfoot[RE,RO]{\thepage}
+%\fancyhead[LO,LE]{\textcolor[RGB]{127,127,127}{Portafolio - Física Computacional II (2022)}} 
+
+\definecolor{tcc}{RGB}{217,217,217} % Table cell color
+
+\renewcommand\tabularxcolumn[1]{m{#1}}
+\setlength{\arrayrulewidth}{0.5pt}
+\renewcommand{\arraystretch}{2}
+
+\begin{document}
+\subfile{portada.tex}
+\tableofcontents
+
+\subfile{introducción.tex}
+
+\subfile{Objetivos.tex}
+
+\subfile{marcoteorico.tex}
+
+\subfile{materiales.tex}
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.5\textwidth]{Materiales.png}
+    \caption{Simulador online}
+    \label{fig:simulador}
+\end{figure}
+
+\subfile{Procedimiento.tex}
+
+\subfile{Resultados.tex}
+
+\subfile{Analisis.tex}
+
+\subfile{Conclusion.tex}
+
+\bibliographystyle{amsplain}
+\bibliography{referencias}
+\end{document}
