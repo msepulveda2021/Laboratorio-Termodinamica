@@ -85,22 +85,34 @@ fig, (ax1, ax2) = plt.subplots(nrows=1, ncol=2, figsize = (11,7), constrained_la
 
 #--------------------------------------------------------------------------------------------------------------------
 
-L1 = ax.errorbar(x_11, y_11, x_11err, y_11err, linestyle='dotted', marker='P', markersize=10, color='orange')
-L2 = ax.errorbar(x_21, y_21, x_21err, y_21err, linestyle='dotted', marker='P', markersize=10, color='darkorange')
-L3 = ax.errorbar(x_31, y_31, x_31err, y_31err, linestyle='dotted', marker='P', markersize=10, color='darkgoldenrod')
-L4 = ax.errorbar(x_12, y_12, x_12err, y_12err, linestyle='-', marker='o', markersize=7, color='lightsteelblue')
-L5 = ax.errorbar(x_22, y_22, x_22err, y_22err, linestyle='-', marker='o', markersize=7, color='cornflowerblue')
-L6 = ax.errorbar(x_32, y_32, x_32err, y_32err, linestyle='-', marker='o', markersize=7, color='royalblue')
+L11 = ax1.errorbar(x_111, y_111, x_111err, y_111err, linestyle='dotted', marker='P', markersize=10, color='orange')
+L21 = ax1.errorbar(x_211, y_211, x_211err, y_211err, linestyle='dotted', marker='P', markersize=10, color='darkorange')
+L31 = ax1.errorbar(x_311, y_311, x_311err, y_311err, linestyle='dotted', marker='P', markersize=10, color='darkgoldenrod')
+L41 = ax1.errorbar(x_121, y_121, x_121err, y_121err, linestyle='-', marker='o', markersize=7, color='lightsteelblue')
+L51 = ax1.errorbar(x_221, y_221, x_221err, y_221err, linestyle='-', marker='o', markersize=7, color='cornflowerblue')
+L61 = ax1.errorbar(x_321, y_321, x_321err, y_321err, linestyle='-', marker='o', markersize=7, color='royalblue')
+
+L12 = ax2.errorbar(x_112, y_112, x_112err, y_112err, linestyle='dotted', marker='P', markersize=10, color='lime')
+L22 = ax2.errorbar(x_212, y_212, x_212err, y_212err, linestyle='dotted', marker='P', markersize=10, color='limegreen')
+L32 = ax2.errorbar(x_312, y_312, x_312err, y_312err, linestyle='dotted', marker='P', markersize=10, color='green')
+L42 = ax2.errorbar(x_122, y_122, x_122err, y_122err, linestyle='-', marker='o', markersize=6, color='lightcoral')
+L52 = ax2.errorbar(x_222, y_222, x_222err, y_222err, linestyle='-', marker='o', markersize=7, color='red')
+L62 = ax2.errorbar(x_322, y_322, x_322err, y_322err, linestyle='-', marker='o', markersize=7, color='firebrick')
 
 #----------------------------------------------------------------------------------------------------------------------------
 
-ax.legend((L1, L2, L3, L4, L5, L6), 
-          ('T=300K, n=50','T=300K, n=100','T=300K, n=150','T=600K, n=50', 'T=600K, n=100', 'T=600K, n=150'), loc='upper right', shadow = True)
-ax.set_xlabel('Volumen (nm)')
-ax.set_ylabel('Presión (atm)')
-ax.set_title('Partículas Pesadas')
+plt.legend((L11, L21, L31, L41, L51, L61, L12, L22, L32, L42, L52, L62), 
+          ('T=300K, n=50','T=300K, n=100','T=300K, n=150','T=600K, n=50', 'T=600K, n=100', 'T=600K, n=150', 'T=300K, n=50','T=300K, n=100','T=300K, n=150','T=600K, n=50', 'T=600K, n=100', 'T=600K, n=150')
+          , loc='upper right', shadow = True)
+ax1.set_xlabel('Volumen (nm)')
+ax1.set_ylabel('Presión (atm)')
+ax1.set_title('Partículas Pesadas')
 
-archivo_1 = 'grafico-PP.pdf'
+ax2.set_xlabel('Volumen (nm)')
+ax2.set_ylabel('Presión (atm)')
+ax2.set_title('Partículas Ligeras')
+
+archivo_1 = 'grafico(1).pdf'
 plt.savefig(archivo_1)
 
 plt.show()
