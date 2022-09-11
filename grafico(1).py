@@ -1,6 +1,8 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
+#ERROR
+
 #------------------PARTICULAS PESADAS------------------------------------------------------------------------------------------------------
 
 # Datos 300k, n50, p_pesadas
