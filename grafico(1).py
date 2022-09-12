@@ -82,12 +82,12 @@ y_322err = np.array([0.4,0.35,0.35,0.4,0.3,0.25])
 #--------------------------------------------------------------------------------------------------------------------
 
 plt.figure()
-fig, (ax1, ax2) = plt.subplots(nrows=1, ncols=2, figsize = (13, 10), constrained_layout=True)
+fig, (ax1, ax2) = plt.subplots(nrows=1, ncols=2, figsize = (17, 13), constrained_layout=True)
 
 L11 = ax1.errorbar(x_111, y_111, x_111err, y_111err, linestyle='dotted', marker='P', markersize=10, color='orange')
 L21 = ax1.errorbar(x_211, y_211, x_211err, y_211err, linestyle='dotted', marker='P', markersize=10, color='darkorange')
 L31 = ax1.errorbar(x_311, y_311, x_311err, y_311err, linestyle='dotted', marker='P', markersize=10, color='darkgoldenrod')
-L41 = ax1.errorbar(x_121, y_121, x_121err, y_121err, linestyle='-', marker='o', markersize=7, color='lightsteelblue')
+L41 = ax1.errorbar(x_121, y_121, x_121err, y_121err, linestyle='-', marker='o', markersize=6, color='lightsteelblue')
 L51 = ax1.errorbar(x_221, y_221, x_221err, y_221err, linestyle='-', marker='o', markersize=7, color='cornflowerblue')
 L61 = ax1.errorbar(x_321, y_321, x_321err, y_321err, linestyle='-', marker='o', markersize=7, color='royalblue')
 
@@ -102,14 +102,14 @@ L62 = ax2.errorbar(x_322, y_322, x_322err, y_322err, linestyle='-', marker='o', 
 
 ax1.legend((L11, L21, L31, L41, L51, L61), 
           ('T=300K, n=50','T=300K, n=100','T=300K, n=150','T=600K, n=50', 'T=600K, n=100', 'T=600K, n=150'), loc='upper right', shadow = True)
-ax1.set_xlabel('Volumen (nm)', fontsize= )
-ax1.set_ylabel('Presión (atm)', fontsize= )
-ax1.set_title('Partículas Pesadas', fontsize= )
+ax1.set_xlabel('Volumen (nm)', fontsize= 20)
+ax1.set_ylabel('Presión (atm)', fontsize= 20)
+ax1.set_title('Partículas Pesadas', fontsize= 25 )
 
 ax2.legend((L12, L22, L32, L42, L52, L62), 
            ('T=300K, n=50','T=300K, n=100','T=300K, n=150','T=600K, n=50', 'T=600K, n=100', 'T=600K, n=150'), loc='upper right', shadow = True)
-ax2.set_xlabel('Volumen (nm)', fontsize= )
-ax2.set_title('Partículas Ligeras', fontsize= )
+ax2.set_xlabel('Volumen (nm)', fontsize= 20)
+ax2.set_title('Partículas Ligeras', fontsize= 25)
 
 archivo_1 = 'grafico(1).pdf'
 plt.savefig(archivo_1)
