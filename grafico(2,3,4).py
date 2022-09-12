@@ -18,7 +18,7 @@ y_250 = np.array([10,5,7.5,12.5,15])
 #----------------GRAFICOS----------------------------------------------------------------------
 
 plt.figure()
-fig, (ax1, ax2, ax3) = plt.subplots(nrows=1, ncols=3, figsize=(11,5), constrained_layout=True)
+fig, (ax1, ax2, ax3) = plt.subplots(nrows=1, ncols=3, figsize=(11,4), constrained_layout=True)
 
 ax1.plot(x_50, y_50, marker='o', color='mediumaquamarine', label='n=50, presión 5.8 atm')
 ax1.set_xlabel('Temperatura (K)')
