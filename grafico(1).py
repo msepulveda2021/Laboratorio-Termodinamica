@@ -101,7 +101,7 @@ L62 = ax2.errorbar(x_322, y_322, x_322err, y_322err, linestyle='-', marker='o', 
 #----------------------------------------------------------------------------------------------------------------------------
 
 ax1.legend((L11, L21, L31, L41, L51, L61), 
-          ('T=300K, n=50','T=300K, n=100','T=300K, n=150','T=600K, n=50', 'T=600K, n=100', 'T=600K, n=150'), loc='upper right', shadow = True, prop={'size': 16})
+          ('$C_{1}$: T=300K, n=50','$C_{2}$: T=300K, n=100','T=300K, n=150','T=600K, n=50', 'T=600K, n=100', 'T=600K, n=150'), loc='upper right', shadow = True, prop={'size': 16})
 ax1.set_xlabel('Volumen (nm)', fontsize= 20)
 ax1.set_ylabel('Presión (atm)', fontsize= 20)
 ax1.set_title('Partículas Pesadas', fontsize= 25)
