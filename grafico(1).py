@@ -82,7 +82,7 @@ y_322err = np.array([0.4,0.35,0.35,0.4,0.3,0.25])
 #--------------------------------------------------------------------------------------------------------------------
 
 plt.figure()
-fig, (ax1, ax2) = plt.subplots(nrows=1, ncols=2, figsize = (9,7), constrained_layout=True)
+fig, (ax1, ax2) = plt.subplots(nrows=1, ncols=2, figsize = (13, 10), constrained_layout=True)
 
 L11 = ax1.errorbar(x_111, y_111, x_111err, y_111err, linestyle='dotted', marker='P', markersize=10, color='orange')
 L21 = ax1.errorbar(x_211, y_211, x_211err, y_211err, linestyle='dotted', marker='P', markersize=10, color='darkorange')
