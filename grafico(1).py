@@ -102,14 +102,14 @@ L62 = ax2.errorbar(x_322, y_322, x_322err, y_322err, linestyle='-', marker='o', 
 
 ax1.legend((L11, L21, L31, L41, L51, L61), 
           ('T=300K, n=50','T=300K, n=100','T=300K, n=150','T=600K, n=50', 'T=600K, n=100', 'T=600K, n=150'), loc='upper right', shadow = True)
-ax1.set_xlabel('Volumen (nm)')
-ax1.set_ylabel('Presión (atm)')
-ax1.set_title('Partículas Pesadas')
+ax1.set_xlabel('Volumen (nm)', fontsize= )
+ax1.set_ylabel('Presión (atm)', fontsize= )
+ax1.set_title('Partículas Pesadas', fontsize= )
 
 ax2.legend((L12, L22, L32, L42, L52, L62), 
            ('T=300K, n=50','T=300K, n=100','T=300K, n=150','T=600K, n=50', 'T=600K, n=100', 'T=600K, n=150'), loc='upper right', shadow = True)
-ax2.set_xlabel('Volumen (nm)')
-ax2.set_title('Partículas Ligeras')
+ax2.set_xlabel('Volumen (nm)', fontsize= )
+ax2.set_title('Partículas Ligeras', fontsize= )
 
 archivo_1 = 'grafico(1).pdf'
 plt.savefig(archivo_1)
